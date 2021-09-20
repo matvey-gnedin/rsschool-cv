@@ -505,13 +505,157 @@ body{
   height: 60%;
 }
 
+
+
+.burger{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.burger span, .burger span:before, .burger span:after{
+  width: 100%;
+  position: absolute;
+  height: 10px;
+  background: #333;
+  display: block;
+  transition: .3s;
+  border-radius: 5px;
+}
+.burger span:before{
+  content: "";
+  top: -20px;
+  transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger span{
+  top: 20px;
+}
+.burger span:after{
+  content: "";
+  bottom: -20px;
+  transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger span.active:before{
+  content: "";
+  top: 0px;
+  transform: rotate(45deg);
+  transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger span.active:after{
+  content: "";
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger span.active{
+  background: rgba(255, 255, 255, 0); 
+}
+
+.menu{
+  width: 250px;
+  height: auto;
+  background: #333;
+  color: #ccc;
+  padding: 0;
+  position: fixed;
+  top: 0px;
+  left: -270px;
+  transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.menu.animate{
+  left: 0;
+}
+
+.burger{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+
+.menu ul{
+  height: 400px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu li{
+  width: 100%;
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(55, 82, 82);
+}
+
+
+
+/* .header-container ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container li{
+  width: 12%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(55, 82, 82);
+}
+
+.header-container li:hover{
+  background-color: tomato;
+}
+
+.header-container a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20.5px;
+  line-height: 22px;
+  color: #FFFFFF;
+} */
+
+
 @media only screen and (max-width: 895px) {
   .header{
     height: 70px;
+    width: 100%;
+  }
+  .header-container{
+    width: 100%;
   }
 
   .header-container nav{
     display: none;
+  }
+  
+
+  .burger{
+    display: block;
+  }
+
+  .menu{
+    display: block;
   }
 
   .left-side{
