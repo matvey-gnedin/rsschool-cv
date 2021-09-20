@@ -135,7 +135,16 @@ body{
   background-color: rgb(55, 82, 82);
 }
 
+.header-container li:hover{
+  background-color: tomato;
+}
+
 .header-container a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-decoration: none;
   font-family: Montserrat;
@@ -225,6 +234,8 @@ body{
 }
 .contacts img{
     margin-right: 30px;
+    width: 45px;
+    height: 41px;
 }
 .contacts p{
     font-family: Montserrat;
@@ -233,6 +244,10 @@ body{
     font-size: 22px;
     line-height: 22px;
     color: #FFFFFF;
+}
+.contacts a{
+  text-decoration: none;
+  color: white;
 }
 .skills{
   width: 87%;
@@ -489,6 +504,112 @@ body{
 .rss img{
   height: 60%;
 }
+
+@media only screen and (max-width: 895px) {
+  .header{
+    height: 70px;
+  }
+
+  .header-container nav{
+    display: none;
+  }
+
+  .left-side{
+    max-width: none;
+    width: 100%;
+  }
+
+  .right-side {
+    max-width: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  
+
+  .footer{
+    height: 100px;
+    width: 100%;
+  }
+
+  .github {
+    flex-direction: column;
+  }
+
+  .github div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0;
+  }
+
+  .rss{
+    flex-direction: column;
+    height: 95%;
+    align-items: center;
+    width: 25%;
+  }
+
+  .rss img{
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  
+  .left-side, .right-side{
+    min-width: 319px;
+  }
+  .header-container{
+    width: 100%;
+  }
+  .wrapper{
+    width: 100%;
+  }
+  .avatar{
+    height: 110px;
+    align-items: center;
+  }
+  .text{
+    text-align: center;
+  }
+  .avatar img{
+    width: 100px;
+    height: 100px;
+  }
+  .avatar h1{
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .avatar h2{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .contacts li{
+    padding-left: 5px;
+  }
+  .contacts img{
+    width: 40px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  .contacts p{
+    font-size: 20px;
+  }
+  .english p{
+    font-size: 22px;
+  }
+}
+
+/* @media only screen and (max-width: 327px) {
+  .header{
+    width: 320;
+  }
+} */
+
+
+
+
 
 
 
