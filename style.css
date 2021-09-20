@@ -1,0 +1,495 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.header-container{
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgb(238, 142, 247);
+  border-radius: 10px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container nav{
+  width: 95%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container li{
+  width: 12%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(55, 82, 82);
+}
+
+.header-container a{
+  text-align: center;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20.5px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.wrapper{
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    width: 90%;   
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+.left-side{
+    max-width: 546px;
+    min-width: 400px;
+    width: 45.5%;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 10px;
+    margin-top: 97px;
+}
+.avatar{
+    width: 87%;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 16.3px;
+}
+.avatar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 35px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.avatar h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.avatar h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: #CECACA;
+}
+.contacts{
+    margin-top: 41.5px;
+    width: 87%;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 41.5px;
+}
+.contacts ul{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+.contacts li{
+    width: 100%;
+    height: 65px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    padding-left: 27px;
+    display: flex;
+    align-items: center;
+}
+.contacts img{
+    margin-right: 30px;
+}
+.contacts p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.skills{
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 41.5px;
+}
+.skills h3, .english h3{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-left: 27px;
+}
+.skills ul{
+  margin-top: 25px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.skills li{
+  width: 100%;
+  height: 24px;
+  margin-left: 27px;
+  align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+    list-style:disc;
+}
+.english{
+  margin: 0 auto;
+  margin-top: 25.5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+  width: 87%;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+}
+.english p{
+  margin-top: 25px;
+  margin-left: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.right-side{
+  max-width: 593px;
+  min-width: 406.2px;
+  width: 49.4%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 97px;
+  height: min-content;
+}
+
+.about-me, .education, .experience, .code{
+  position: relative;
+  width: 91.5%;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.about-me h3, .education h3, .experience h3, .code h3{
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #545454;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 18px;
+  color: #FFFFFF;
+  z-index: 1;
+}
+.line{
+  position: absolute;
+  height: 1px;
+  width: calc(100% - 280px);
+  top: 19.5px;
+  left: 280px;
+  z-index: 2;
+  background-color: #545454;
+}
+
+.about-me p, .education p, .experience p{
+  margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: justify;
+  text-indent: 1.5em;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.education h5, .experience h5{
+  margin-top: 20px;
+  margin-bottom: -10px;
+  text-align: justify;
+  text-indent: 1.5em;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.code pre{
+  width: 100%;
+}
+
+.code code{
+  width: 100%;
+  background: #545454;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.projects, .video{
+  width: 100%;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+.projects h3, .video h3{
+  margin-top: 20px;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.projects article{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.projects h4{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 30px;
+  color: black;
+  text-align: left;
+  padding-left: 50px;
+  text-decoration: underline;
+}
+.projects p{
+  margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: justify;
+  text-indent: 1.5em;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects a{
+  cursor: pointer;
+  width: max-content;
+  
+}
+.projects img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video_you{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 70%;
+  height: 30vmax;
+  border-radius: 20px;
+}
+
+.footer{
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 1200px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgba(52, 51, 54, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+}
+
+.github div{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.github a, .rss a{
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.github a:hover, .rss a{
+  text-decoration: underline;
+}
+
+.rss{
+  display: flex;
+  height: 100%;
+  width: 30%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rss img{
+  height: 60%;
+}
+
+
+
+
