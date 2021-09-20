@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/libs/highlight/a11y-dark.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -57,8 +58,48 @@
             </section>
         </div>
         <div class="right-side">
-            
+            <section class="about-me">
+                <div class="line"></div>
+                <h3>About Me</h3>
+                <p>I am responsible, active, stress-resistant. I would like to gain experience in IT, more specifically in Frontend.</p>
+            </section>
+            <section class="education">
+                <div class="line"></div>
+                <h3>Education</h3>
+                <h5>September 2017 - June 2021 - Belarusian State University of Informatics and Radioelectronics</h5>
+                <p>Specialization: Information Systems and Technologies</p>
+            </section>
+            <section class="experience">
+                <div class="line"></div>
+                <h3>Experience</h3>
+                <h5>February 2021 - Auguest 2021 - Rolling Scopes School</h5>
+                <p>June 2021 - Now - FreeLance</p>
+            </section>
+            <section class="code">
+                <div class="line"></div>
+                <h3>Sample code</h3>
+                <pre><code class="javascript">
+function revrot(str, sz) {
+if(sz <= 0) return "";
+if(sz > str.length) return "";
+const regexp = new RegExp('.{' + sz + '}','g');
+let arr = str.match(regexp);
+for (let i = 0; i < arr.length; i++){
+let b = arr[i].split('').map((a) => a*a*a)
+        .reduce((sum, current) => sum+current, 0);
+    if (b%2 == 0){
+    arr[i] = arr[i].split("").reverse().join("");
+    } else {
+    arr[i] = arr[i].slice(1) + arr[i].slice(0, 1);
+    }
+}
+return arr.join('');
+}
+                </code></pre>
+            </section>
         </div>
     </main>
+    <script src="./assets/libs/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
