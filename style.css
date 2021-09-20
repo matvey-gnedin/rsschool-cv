@@ -6,8 +6,8 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -38,8 +38,8 @@ body {
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -76,3 +76,166 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+body{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+
+}
+
+.wrapper{
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    width: 90%;   
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+.left-side{
+    max-width: 546px;
+    min-width: 400px;
+    width: 45.5%;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 10px;
+    margin-top: 17px;
+}
+.avatar{
+    width: 87%;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 16.3px;
+}
+.avatar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 35px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.avatar h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.avatar h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: #CECACA;
+}
+.contacts{
+    margin-top: 41.5px;
+    width: 87%;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 41.5px;
+}
+.contacts ul{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+.contacts li{
+    width: 100%;
+    height: 65px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    padding-left: 27px;
+    display: flex;
+    align-items: center;
+}
+.contacts img{
+    margin-right: 30px;
+}
+.contacts p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.skills{
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 41.5px;
+}
+.skills h3, .english h3{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-left: 27px;
+}
+.skills ul{
+  margin-top: 25px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.skills li{
+  width: 100%;
+  height: 24px;
+  margin-left: 27px;
+  align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+    list-style:disc;
+}
+.english{
+  margin: 0 auto;
+  margin-top: 25.5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+  width: 87%;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+}
+.english p{
+  margin-top: 25px;
+  margin-left: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.right-side{
+  max-width: 593px;
+  width: 49.4%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 17px;
+  height: min-content;
+}
+
+
+
+
