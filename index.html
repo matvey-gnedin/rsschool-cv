@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/libs/highlight/a11y-dark.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#code">Sample code</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="left-side">
+            <section class="avatar">
+                <img src="./assets/avatar.jpg" alt="avatar">
+                <div class="text">
+                    <h1>Matvey Gnedin</h1>
+                    <h2>Front-End Developer</h2>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <ul>
+                    <li>
+                        <img src="./assets/svg/telephone.svg" alt="telephone">
+                        <p>+375 44 7456775</p>
+                    </li>
+                    <li>
+                        <img src="./assets/svg/mail.svg" alt="mail.ru">
+                        <p>matvej.gnedin.10@mail.ru</p>
+                    </li>
+                    <li>
+                        <img src="./assets/svg/telephone.svg" alt="telephone">
+                        <p>+375 44 745</p>
+                    </li>
+                    <li>
+                        <img src="./assets/svg/telephone.svg" alt="telephone">
+                        <p>+375 44 7456775</p>
+                    </li>
+                    <li>
+                        <img src="./assets/svg/location.svg" alt="mail.ru">
+                        <p>Belarus, Minsk</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="skills" id="skills">
+                <h3>Skills:</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>GIT</li>
+                    <li>Figma</li>
+                </ul>
+            </section>
+            <section class="english">
+                <h3>English:</h3>
+                <p>Pre-Intermediate/Intermediate (A2/B1)</p>
+            </section>
+        </div>
+        <div class="right-side">
+            <section class="about-me" id="about">
+                <div class="line"></div>
+                <h3>About Me</h3>
+                <p>I am responsible, active, stress-resistant. I would like to gain experience in IT, more specifically in Frontend.</p>
+            </section>
+            <section class="education" id="education">
+                <div class="line"></div>
+                <h3>Education</h3>
+                <h5>September 2017 - June 2021 - Belarusian State University of Informatics and Radioelectronics</h5>
+                <p>Specialization: Information Systems and Technologies</p>
+            </section>
+            <section class="experience" id="experience">
+                <div class="line"></div>
+                <h3>Experience</h3>
+                <h5>February 2021 - Auguest 2021 - Rolling Scopes School</h5>
+                <p>June 2021 - Now - FreeLance</p>
+            </section>
+            <section class="code" id="code">
+                <div class="line"></div>
+                <h3>Sample code</h3>
+                <pre><code class="javascript">
+function revrot(str, sz) {
+if(sz <= 0) return "";
+if(sz > str.length) return "";
+const regexp = new RegExp('.{' + sz + '}','g');
+let arr = str.match(regexp);
+for (let i = 0; i < arr.length; i++){
+let b = arr[i].split('').map((a) => a*a*a)
+        .reduce((sum, current) => sum+current, 0);
+    if (b%2 == 0){
+    arr[i] = arr[i].split("").reverse().join("");
+    } else {
+    arr[i] = arr[i].slice(1) + arr[i].slice(0, 1);
+    }
+}
+return arr.join('');
+}
+                </code></pre>
+            </section>
+        </div>
+        <section class="projects" id="projects">
+            <h3>Projects</h3>
+            <article>
+                <h4><i>Online-zoo</i></h4>
+                <p>This project is an online zoo site with a payment form, an interactive map and various animations such as a slider and a drop-down menu, adapted to any screen resolution.</p>
+                <a href="https://rolling-scopes-school.github.io/matvey-nyashka-JSFE2021Q1/online-zoo/pages/main_page/main_page.html">
+                    <img src="./assets/projects-image/online-zoo.jpg" alt="online-zoo">
+                </a>
+            </article>
+            <article>
+                <h4><i>Photo filter</i></h4>
+                <p>This project is an online zoo site with a payment form, an interactive map and various animations such as a slider and a drop-down menu, adapted to any screen resolution.</p>
+                <a href="https://rolling-scopes-school.github.io/matvey-nyashka-JSFE2021Q1/photo-filter/">
+                    <img src="./assets/projects-image/photo-filter.jpg" alt="online-zoo">
+                </a>
+            </article>
+            <article>
+                <h4><i>Virtual piano</i></h4>
+                <p>This project is an online zoo site with a payment form, an interactive map and various animations such as a slider and a drop-down menu, adapted to any screen resolution.</p>
+                <a href="https://rolling-scopes-school.github.io/matvey-nyashka-JSFE2021Q1/virtual-piano/">
+                    <img src="./assets/projects-image/virtual-phiano.jpg" alt="online-zoo">
+                </a>
+            </article>
+            <article>
+                <h4><i>Museum "Louvre"</i></h4>
+                <p>This project is an online zoo site with a payment form, an interactive map and various animations such as a slider and a drop-down menu, adapted to any screen resolution.</p>
+                <a href="https://rolling-scopes-school.github.io/matvey-nyashka-JSFEPRESCHOOL/museum/">
+                    <img src="./assets/projects-image/louvre.jpg" alt="online-zoo">
+                </a>
+            </article>
+        </section>
+        <section class="video" id="video">
+            <h3>My presentation</h3>
+            <iframe class="video_you" src="https://www.youtube.com/embed/7FNIIa5h2P8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="github">
+            <div>
+                <img src="./assets/svg/github.svg" alt="github">
+            </div>
+            <a href="https://github.com/matvey-nyashka">matvey-nyashka</a>
+        </div>
+        <div class="rss">
+            <a href="https://rs.school/js/">Курс RSs</a>
+            2021
+            <img src="./assets/svg/rs_school_js.svg" alt="rss">
+        </div>
+    </footer>
+    <script src="./assets/libs/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
