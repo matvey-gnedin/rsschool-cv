@@ -229,6 +229,7 @@ body{
 
 .right-side{
   max-width: 593px;
+  min-width: 406.2px;
   width: 49.4%;
   background: #FFFFFF;
   border-radius: 10px;
@@ -304,6 +305,60 @@ body{
   padding: 0;
 }
 
-
+.projects{
+  width: 100%;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+.projects h3{
+  margin-top: 20px;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.projects article{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.projects h4{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 30px;
+  color: black;
+  text-align: left;
+  padding-left: 50px;
+  text-decoration: underline;
+}
+.projects p{
+  margin-top: 20px;
+  padding-bottom: 30px;
+  text-align: justify;
+  text-indent: 1.5em;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects a{
+  cursor: pointer;
+  width: max-content;
+  
+}
+.projects img{
+  width: 100%;
+  border-radius: 20px;
+}
 
 
