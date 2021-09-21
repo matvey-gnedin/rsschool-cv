@@ -215,6 +215,9 @@ body{
     margin: 0 auto;
     margin-top: 41.5px;
 }
+.contacts h2{
+  display: none;
+}
 .contacts ul{
     width: 100%;
     height: 360px;
