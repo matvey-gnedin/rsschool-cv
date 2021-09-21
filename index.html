@@ -52,6 +52,7 @@
                 </div>
             </section>
             <section class="contacts" id="contacts">
+                <h2>dsffd</h2>
                 <ul>
                     <li>
                         <img src="./assets/svg/telephone.svg" alt="telephone">
@@ -113,11 +114,11 @@
                 <h3>Sample code</h3>
                 <pre><code class="javascript">
 function revrot(str, sz) {
-if(sz <= 0) return "";
+if(sz &lt;= 0) return "";
 if(sz > str.length) return "";
 const regexp = new RegExp('.{' + sz + '}','g');
 let arr = str.match(regexp);
-for (let i = 0; i < arr.length; i++){
+for (let i = 0; i &lt; arr.length; i++){
 let b = arr[i].split('').map((a) => a*a*a)
         .reduce((sum, current) => sum+current, 0);
     if (b%2 == 0){
@@ -164,7 +165,7 @@ return arr.join('');
         </section>
         <section class="video" id="video">
             <h3>My presentation</h3>
-            <iframe class="video_you" src="https://www.youtube.com/embed/7FNIIa5h2P8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video_you" src="https://www.youtube.com/embed/7FNIIa5h2P8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     </main>
     <footer class="footer">
