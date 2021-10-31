@@ -182,7 +182,7 @@ body{
 }
 .avatar img{
     width: 200px;
-    height: 200px;
+    height: 230px;
     border-radius: 50%;
     margin-right: 35px;
 }
@@ -435,7 +435,7 @@ body{
 .projects a{
   cursor: pointer;
   width: max-content;
-  
+  color: black;
 }
 .projects img{
   width: 100%;
